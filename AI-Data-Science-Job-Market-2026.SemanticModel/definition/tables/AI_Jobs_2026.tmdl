@@ -1,0 +1,707 @@
+table AI_Jobs_2026
+	lineageTag: ba847a27-1227-46a3-9a10-34431de9745a
+
+	measure 'Total Jobs' =
+			
+			COUNTROWS(AI_Jobs_2026)
+		formatString: 0
+		lineageTag: 10f440a8-d4f0-4267-8280-9eac2b8dad3b
+
+	measure 'Average Salary' =
+			
+			AVERAGE(AI_Jobs_2026[salary_usd])
+		lineageTag: 1e42f293-5bff-4bf1-b5f2-c46fa4435496
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Highest Salary' =
+			
+			MAX(AI_Jobs_2026[salary_usd])
+		formatString: 0
+		lineageTag: ad9b72d9-46ec-4643-aa0e-055bef1ec183
+
+	measure 'Minimum Salary' =
+			
+			MIN(AI_Jobs_2026[salary_usd])
+		formatString: 0
+		lineageTag: ba863faf-a2a3-4605-901e-1d92936715fc
+
+	measure 'Median Salary' =
+			
+			MEDIAN(AI_Jobs_2026[salary_usd])
+		lineageTag: 000ea76a-6698-4bec-9707-91392b4fdb34
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Experience' =
+			
+			AVERAGE(AI_Jobs_2026[years_experience])
+		formatString: 0.00
+		lineageTag: 51be3663-9474-4827-b41e-94d5b4193a9b
+
+	measure 'Average Satisfaction' =
+			
+			AVERAGE(AI_Jobs_2026[job_satisfaction_score])
+		lineageTag: d70ddf83-1803-4e20-a7a8-1a97a1f1dfde
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'AI Users' =
+			
+			CALCULATE(
+			    [Total Jobs],
+			    AI_Jobs_2026[uses_ai_tools_daily] = TRUE()
+			)
+		formatString: 0
+		lineageTag: 215b3048-fdeb-417d-9444-19754bbdd52f
+
+	measure 'AI Usage %' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        COUNTROWS(AI_Jobs_2026),
+			        AI_Jobs_2026[uses_ai_tools_daily] = TRUE()
+			    ),
+			    COUNTROWS(AI_Jobs_2026),
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: e7e8880d-ab05-4c46-b0ac-227703f843aa
+
+	measure 'Jobs Switched' =
+			
+			CALCULATE(
+			    [Total Jobs],
+			    AI_Jobs_2026[switched_jobs_last_year] = TRUE()
+			)
+		formatString: 0
+		lineageTag: da48a21b-f897-4b58-840a-49738944d629
+
+	measure 'Job Switch %' =
+			
+			DIVIDE(
+			    CALCULATE(
+			        COUNTROWS(AI_Jobs_2026),
+			        AI_Jobs_2026[switched_jobs_last_year] = TRUE()
+			    ),
+			    COUNTROWS(AI_Jobs_2026),
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: b747e064-cd10-4e85-b600-ca6b039e8795
+
+	measure 'Average AI Hours' =
+			
+			AVERAGE(AI_Jobs_2026[ai_tools_hours_per_week])
+		lineageTag: 08730b63-c432-4182-9b98-f32b3352a4d1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Upskilling Hours' =
+			
+			AVERAGE(AI_Jobs_2026[upskilling_hours_per_month])
+		lineageTag: 668f5552-6a77-4d02-a535-9dde91f04514
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Salary Range' =
+			
+			[Highest Salary] - [Minimum Salary]
+		formatString: 0
+		lineageTag: 1fe30d1e-0c32-4447-b92e-622b24d2c158
+
+	measure 'maximum salary' = MAX('AI_Jobs_2026'[salary_usd])
+		formatString: 0
+		lineageTag: c8bd7782-eb02-4b2d-9383-67ea64e6e30e
+
+	measure 'Total Countries' =
+			
+			DISTINCTCOUNT(AI_Jobs_2026[company_location])
+		formatString: 0
+		lineageTag: 6a805647-f5fe-4d94-9a8b-c2d653550b96
+
+	measure 'Fully Remote Jobs' =
+			
+			CALCULATE(
+			    [Total Jobs],
+			    AI_Jobs_2026[remote_ratio] = 100
+			)
+		formatString: 0
+		lineageTag: bdaaead9-472f-4b39-8a92-a2e8b464fac6
+
+	measure 'Hybrid Jobs' =
+			
+			CALCULATE(
+			    [Total Jobs],
+			    AI_Jobs_2026[remote_ratio] = 50
+			)
+		formatString: 0
+		lineageTag: 9d6d96d4-a054-49ae-9735-af675bd0d30f
+
+	measure 'Onsite Jobs' =
+			
+			CALCULATE(
+			    [Total Jobs],
+			    AI_Jobs_2026[remote_ratio] = 0
+			)
+		formatString: 0
+		lineageTag: a4f6fe7b-a281-41b7-9af7-e63558154827
+
+	measure 'Average AI Hours/Week' =
+			
+			AVERAGE(AI_Jobs_2026[ai_tools_hours_per_week])
+		lineageTag: 0411e2b1-9f12-4bf3-8500-2a8f143494e7
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'AI Automation Fear' =
+			
+			AVERAGE(AI_Jobs_2026[fears_ai_automation_score])
+		lineageTag: 53a54d31-a1e0-418b-816e-6e349bd373de
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Upskilling Hours/Month' =
+			
+			AVERAGE(AI_Jobs_2026[upskilling_hours_per_month])
+		lineageTag: b1ee18c0-c6fd-4dd6-a860-50df69505a6f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'ML / AI Jobs Count' =
+			
+			CALCULATE(
+			    [Total Jobs],
+			    AI_Jobs_2026[has_ml_in_title] = TRUE()
+			)
+		formatString: 0
+		lineageTag: 34f3ff34-45e6-486f-a475-1a75d7789d37
+
+	measure 'Average Job Satisfaction' =
+			
+			AVERAGE(AI_Jobs_2026[job_satisfaction_score])
+		formatString: 0.00
+		lineageTag: 24bb10cf-1aee-4262-a3b6-773bc6938676
+
+	measure 'Salary Distribution %' =
+			
+			DIVIDE(
+			    COUNTROWS(AI_Jobs_2026),
+			    CALCULATE(
+			        COUNTROWS(AI_Jobs_2026),
+			        REMOVEFILTERS(AI_Jobs_2026[salary_usd (bins)])
+			    ),
+			    0
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 91924e3f-b8e8-4e46-bb4c-ee68222d5ac6
+
+	measure 'Upskilling Hours %' =
+			
+			DIVIDE(
+			    COUNTROWS(AI_Jobs_2026),
+			    CALCULATE(
+			        COUNTROWS(AI_Jobs_2026),
+			        ALL(AI_Jobs_2026[Upskilling Hours Category])
+			    ),
+			    0
+			)
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: a49e2410-433d-4672-88f5-2ec11e799fff
+
+	column job_title
+		dataType: string
+		lineageTag: 56e4ec12-17e8-4c53-b762-cf848e34ff91
+		summarizeBy: none
+		sourceColumn: job_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column experience_level
+		dataType: string
+		lineageTag: 49bf5e21-bc63-4f2d-85d7-d3136d7b8d1b
+		summarizeBy: none
+		sourceColumn: experience_level
+
+		annotation SummarizationSetBy = Automatic
+
+	column employment_type
+		dataType: string
+		lineageTag: 2ba7c08e-0c9d-4823-b87c-ed60b3b9fafe
+		summarizeBy: none
+		sourceColumn: employment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column company_size
+		dataType: string
+		lineageTag: 88f8c7c2-3888-4876-b505-0bd7b8b26eaa
+		summarizeBy: none
+		sourceColumn: company_size
+
+		annotation SummarizationSetBy = Automatic
+
+	column company_location
+		dataType: string
+		lineageTag: 4b15b92e-12df-4ee5-a8de-edb24bc2ca5d
+		summarizeBy: none
+		sourceColumn: company_location
+
+		annotation SummarizationSetBy = Automatic
+
+	column employee_residence
+		dataType: string
+		lineageTag: 04cb2e85-8548-4233-9a61-b4fd36bed498
+		summarizeBy: none
+		sourceColumn: employee_residence
+
+		annotation SummarizationSetBy = Automatic
+
+	column industry
+		dataType: string
+		lineageTag: 87557cea-e1dc-4faa-9f6e-0b35c5923399
+		summarizeBy: none
+		sourceColumn: industry
+
+		annotation SummarizationSetBy = Automatic
+
+	column remote_ratio
+		dataType: int64
+		formatString: 0
+		lineageTag: a8adfd8f-d80f-4b97-816e-ef02ec13ab3e
+		summarizeBy: sum
+		sourceColumn: remote_ratio
+
+		annotation SummarizationSetBy = Automatic
+
+	column years_experience
+		dataType: double
+		lineageTag: 745eef19-dc45-464d-85eb-4a81eb17cf3e
+		summarizeBy: sum
+		sourceColumn: years_experience
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column education_level
+		dataType: string
+		lineageTag: ac32be2f-ffe2-4863-8835-cdd8da97e7d5
+		summarizeBy: none
+		sourceColumn: education_level
+
+		annotation SummarizationSetBy = Automatic
+
+	column primary_language
+		dataType: string
+		lineageTag: a49c3389-6930-4466-be66-006e52438bfe
+		summarizeBy: none
+		sourceColumn: primary_language
+
+		annotation SummarizationSetBy = Automatic
+
+	column has_ml_in_title
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8c24eab1-aa43-4a66-8dbb-f7f2988f931f
+		summarizeBy: none
+		sourceColumn: has_ml_in_title
+
+		annotation SummarizationSetBy = Automatic
+
+	column manages_people
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7e8575bd-d87a-4926-ae9f-77be138287ac
+		summarizeBy: none
+		sourceColumn: manages_people
+
+		annotation SummarizationSetBy = Automatic
+
+	column team_size
+		dataType: int64
+		formatString: 0
+		lineageTag: dec298b9-549c-4b38-89c3-f66aa1e24cd4
+		summarizeBy: sum
+		sourceColumn: team_size
+
+		annotation SummarizationSetBy = Automatic
+
+	column certifications_count
+		dataType: int64
+		formatString: 0
+		lineageTag: 609da675-0acf-46e4-8490-2919b6f5ec96
+		summarizeBy: sum
+		sourceColumn: certifications_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column weekly_hours
+		dataType: double
+		lineageTag: 6e657be6-f374-484e-a6db-8ae37a0d502f
+		summarizeBy: sum
+		sourceColumn: weekly_hours
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column uses_ai_tools_daily
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 4966dfc7-dc60-48dd-87eb-15a168267c87
+		summarizeBy: none
+		sourceColumn: uses_ai_tools_daily
+
+		annotation SummarizationSetBy = Automatic
+
+	column ai_tools_hours_per_week
+		dataType: double
+		lineageTag: c8e8a14a-ee72-49ca-a56f-4fffa4ba40f1
+		summarizeBy: sum
+		sourceColumn: ai_tools_hours_per_week
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"AI_Jobs_2026","TableItemName":"ai_tools_hours_per_week (bins)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column salary_currency
+		dataType: string
+		lineageTag: 1ca4e7da-d690-47d2-969c-fee9b94bb798
+		summarizeBy: none
+		sourceColumn: salary_currency
+
+		annotation SummarizationSetBy = Automatic
+
+	column salary_usd
+		dataType: int64
+		formatString: 0
+		lineageTag: bb9d9a54-e9ae-40b6-b2a0-27d2347016cb
+		summarizeBy: sum
+		sourceColumn: salary_usd
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"AI_Jobs_2026","TableItemName":"salary_usd (bins)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column equity_offered_pct
+		dataType: double
+		lineageTag: 2e47edfa-9541-4127-b8ed-6c55c5d29795
+		summarizeBy: sum
+		sourceColumn: equity_offered_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column bonus_pct
+		dataType: double
+		lineageTag: f8655862-c242-4881-ac26-aa3b52d0fc90
+		summarizeBy: sum
+		sourceColumn: bonus_pct
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column job_satisfaction_score
+		dataType: double
+		lineageTag: d28f207f-bc0c-4e1d-a96f-67c866c16346
+		summarizeBy: sum
+		sourceColumn: job_satisfaction_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column interviews_to_offer
+		dataType: int64
+		formatString: 0
+		lineageTag: 46accf61-33d8-41b6-8efc-913485b77b78
+		summarizeBy: sum
+		sourceColumn: interviews_to_offer
+
+		annotation SummarizationSetBy = Automatic
+
+	column switched_jobs_last_year
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 5b102c37-c75f-4cd6-9f44-0bd5d468445b
+		summarizeBy: none
+		sourceColumn: switched_jobs_last_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column upskilling_hours_per_month
+		dataType: double
+		lineageTag: 2b5295dd-b2b4-449d-9fae-8bf089e7abea
+		summarizeBy: sum
+		sourceColumn: upskilling_hours_per_month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		annotation __PBI_SemanticLinks = [{"LinkTarget":{"TableName":"AI_Jobs_2026","TableItemName":"upskilling_hours_per_month (bins)","ObjectType":4},"LinkType":"UsedInGroup"}]
+
+	column fears_ai_automation_score
+		dataType: double
+		lineageTag: 65c6eeb1-e034-4922-8da9-4dcfb7a6e952
+		summarizeBy: sum
+		sourceColumn: fears_ai_automation_score
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Remote Work Type' =
+			
+			SWITCH(
+			    AI_Jobs_2026[remote_ratio],
+			    0, "On-site",
+			    50, "Hybrid",
+			    100, "Fully Remote",
+			    "Other"
+			)
+		lineageTag: 580157e7-3fd3-498b-b13d-35494f292cf8
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Company Size Full' =
+			
+			SWITCH(
+			    'AI_Jobs_2026'[company_size],
+			    "S", "Small",
+			    "M", "Medium",
+			    "L", "Large",
+			    "Unknown"
+			)
+		lineageTag: 266c6a7c-bab3-4a5f-a1d8-14f5b5516d7d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Satisfaction Category' =
+			
+			SWITCH(
+			    TRUE(),
+			    AI_Jobs_2026[job_satisfaction_score] >= 8, "Very Satisfied",
+			    AI_Jobs_2026[job_satisfaction_score] >= 6, "Satisfied",
+			    AI_Jobs_2026[job_satisfaction_score] >= 4, "Neutral",
+			    "Dissatisfied"
+			)
+		lineageTag: 4767a4dc-ab2d-41d1-9bea-ae52a105a605
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Company Country' =
+			
+			SWITCH(
+			    'AI_Jobs_2026'[company_location],
+			    "CA", "Canada",
+			    "IN", "India",
+			    "AU", "Australia",
+			    "GB", "United Kingdom",
+			    "PL", "Poland",
+			    "BR", "Brazil",
+			    "DE", "Germany",
+			    "FR", "France",
+			    "NL", "Netherlands",
+			    "Other"
+			)
+		lineageTag: db7daa42-012a-433a-b822-071e77a8e66d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AI Usage Category' = IF( AI_Jobs_2026[uses_ai_tools_daily], "Yes" , "No")
+		lineageTag: fd58af69-2c64-4d05-9ba1-0def92430715
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'ai_tools_hours_per_week (bins)' =
+			IF(
+				ISBLANK('AI_Jobs_2026'[ai_tools_hours_per_week]),
+				BLANK(),
+				IF(
+					'AI_Jobs_2026'[ai_tools_hours_per_week] >= 0,
+					ROUNDDOWN('AI_Jobs_2026'[ai_tools_hours_per_week] / 3, 0) * 3,
+					ROUNDUP('AI_Jobs_2026'[ai_tools_hours_per_week] / 3, 0) * 3
+				)
+			)
+		lineageTag: 90950301-b292-433a-bea7-7d3e27739add
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "AI_Jobs_2026"
+				          }
+				        },
+				        "Property": "ai_tools_hours_per_week"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 3.0,
+				      "unit": 0
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"AI_Jobs_2026"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"ai_tools_hours_per_week"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"ai_tools_hours_per_week"}},"Size":3.0}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'upskilling_hours_per_month (bins)' =
+			IF(
+				ISBLANK('AI_Jobs_2026'[upskilling_hours_per_month]),
+				BLANK(),
+				IF(
+					'AI_Jobs_2026'[upskilling_hours_per_month] >= 0,
+					ROUNDDOWN('AI_Jobs_2026'[upskilling_hours_per_month] / 3, 0) * 3,
+					ROUNDUP('AI_Jobs_2026'[upskilling_hours_per_month] / 3, 0) * 3
+				)
+			)
+		lineageTag: 00cdacf3-c06e-4e02-a577-f44ea8d74a71
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "AI_Jobs_2026"
+				          }
+				        },
+				        "Property": "upskilling_hours_per_month"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 3.0,
+				      "unit": 0
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"AI_Jobs_2026"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"upskilling_hours_per_month"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"upskilling_hours_per_month"}},"Size":3.0}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'salary_usd (bins)' =
+			IF(
+				ISBLANK('AI_Jobs_2026'[salary_usd]),
+				BLANK(),
+				INT('AI_Jobs_2026'[salary_usd] / 25000) * 25000
+			)
+		formatString: 0
+		lineageTag: 93596163-9dac-491f-92da-acbf02b655e9
+		summarizeBy: none
+
+		extendedProperty GroupingMetadata =
+				{
+				  "version": 0,
+				  "groupedColumns": [
+				    {
+				      "Column": {
+				        "Expression": {
+				          "SourceRef": {
+				            "Entity": "AI_Jobs_2026"
+				          }
+				        },
+				        "Property": "salary_usd"
+				      }
+				    }
+				  ],
+				  "binningMetadata": {
+				    "binSize": {
+				      "value": 25000.0,
+				      "unit": 0
+				    }
+				  }
+				}
+
+		annotation GroupingDesignState = {"Version":0,"Sources":[{"Name":"a","Entity":"AI_Jobs_2026"}],"GroupedColumns":[{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"salary_usd"}}],"BinItem":{"Expression":{"Floor":{"Expression":{"Column":{"Expression":{"SourceRef":{"Source":"a"}},"Property":"salary_usd"}},"Size":25000.0}}}}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AI Hours Category' =
+			
+			SWITCH(
+			    TRUE(),
+			    AI_Jobs_2026[ai_tools_hours_per_week] <= 2, "0-2 hrs",
+			    AI_Jobs_2026[ai_tools_hours_per_week] <= 5, "2-5 hrs",
+			    AI_Jobs_2026[ai_tools_hours_per_week] <= 10, "5-10 hrs",
+			    AI_Jobs_2026[ai_tools_hours_per_week] <= 20, "10-20 hrs",
+			    "20+ hrs"
+			)
+		lineageTag: 1033a3b4-ba34-40ee-9a10-1e105f847b30
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'AI Hours Sort' =
+			
+			SWITCH(
+			    TRUE(),
+			    AI_Jobs_2026[ai_tools_hours_per_week] <= 2, 1,
+			    AI_Jobs_2026[ai_tools_hours_per_week] <= 5, 2,
+			    AI_Jobs_2026[ai_tools_hours_per_week] <= 10, 3,
+			    AI_Jobs_2026[ai_tools_hours_per_week] <= 20, 4,
+			    5
+			)
+		formatString: 0%;-0%;0%
+		lineageTag: 9382ffa1-e8d3-4acf-8c2a-7354f45a45a5
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Upskilling Hours Category' =
+			
+			SWITCH(
+			    TRUE(),
+			    AI_Jobs_2026[upskilling_hours_per_month] <= 5, "0-5 hrs",
+			    AI_Jobs_2026[upskilling_hours_per_month] <= 10, "5-10 hrs",
+			    AI_Jobs_2026[upskilling_hours_per_month] <= 20, "10-20 hrs",
+			    AI_Jobs_2026[upskilling_hours_per_month] <= 30, "20-30 hrs",
+			    "30+ hrs"
+			)
+		lineageTag: 3c9b9a42-dfd9-42bb-bf88-5a50f68288dd
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition AI_Jobs_2026 = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\ELCOT\Downloads\archive\ai_ds_job_salaries_2026.csv"),[Delimiter=",", Columns=27, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"job_title", type text}, {"experience_level", type text}, {"employment_type", type text}, {"company_size", type text}, {"company_location", type text}, {"employee_residence", type text}, {"industry", type text}, {"remote_ratio", Int64.Type}, {"years_experience", type number}, {"education_level", type text}, {"primary_language", type text}, {"has_ml_in_title", type logical}, {"manages_people", type logical}, {"team_size", Int64.Type}, {"certifications_count", Int64.Type}, {"weekly_hours", type number}, {"uses_ai_tools_daily", type logical}, {"ai_tools_hours_per_week", type number}, {"salary_currency", type text}, {"salary_usd", Int64.Type}, {"equity_offered_pct", type number}, {"bonus_pct", type number}, {"job_satisfaction_score", type number}, {"interviews_to_offer", Int64.Type}, {"switched_jobs_last_year", type logical}, {"upskilling_hours_per_month", type number}, {"fears_ai_automation_score", type number}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_ResultType = Table
+
