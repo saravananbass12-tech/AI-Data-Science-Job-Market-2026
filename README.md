@@ -11,11 +11,61 @@
 
 ---
 
+## 🖼️ Dashboard Screenshots
+
+### 📌 1. Job Market Overview
+
+<div align="center">
+
+<img src="Screenshots/1.png" alt="Job Market Overview" width="950">
+
+</div>
+
+---
+
+### 📌 2. Salary & Career Analysis
+
+<div align="center">
+
+<img src="Screenshots/2.png" alt="Salary and Career Analysis" width="950">
+
+</div>
+
+---
+
+### 📌 3. AI Adoption & Employee Insights
+
+<div align="center">
+
+<img src="Screenshots/3.png" alt="AI Adoption and Employee Insights" width="950">
+
+</div>
+
+---
+
+### 📌 4. Executive Insights
+
+<div align="center">
+
+<img src="Screenshots/4.png" alt="Executive Insights" width="950">
+
+</div>
+
+---
+
 ## 📌 Project Overview
 
 **AI & Data Science Job Market 2026** is an interactive **Power BI dashboard** designed to analyze job-market trends across Artificial Intelligence, Data Science, Machine Learning, and related technology roles.
 
-The dashboard provides insights into **job roles, salaries, experience levels, employee satisfaction, remote work, AI adoption, and AI-related workplace concerns**.
+The dashboard provides insights into:
+
+* 💼 Job roles
+* 💰 Salaries
+* 🎓 Experience levels
+* 😊 Employee satisfaction
+* 🤖 AI adoption
+* 🌍 Remote work
+* ⚠️ AI-related concerns
 
 ---
 
@@ -26,20 +76,18 @@ The dashboard provides insights into **job roles, salaries, experience levels, e
 * Understand employee satisfaction.
 * Analyze remote-work opportunities.
 * Explore AI adoption in the workplace.
-* Study employee concerns related to AI.
-* Identify important career and employment patterns.
+* Study AI-related workplace concerns.
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-| Tool              | Purpose                           |
-| ----------------- | --------------------------------- |
-| 📊 Power BI       | Dashboard & Visualization         |
-| 📈 Data Analytics | Data Analysis                     |
-| 🧮 DAX            | Calculations & Measures           |
-| 🗂️ Power Query   | Data Cleaning & Transformation    |
-| 📁 Dataset        | AI & Data Science Job Market Data |
+| Tool              | Purpose                        |
+| ----------------- | ------------------------------ |
+| 📊 Power BI       | Dashboard & Visualization      |
+| 📈 Data Analytics | Data Analysis                  |
+| 🧮 DAX            | Calculations & Measures        |
+| 🔄 Power Query    | Data Cleaning & Transformation |
 
 ---
 
@@ -47,114 +95,23 @@ The dashboard provides insights into **job roles, salaries, experience levels, e
 
 ### 1️⃣ Job Market Overview
 
-Provides a high-level view of the AI & Data Science job market.
-
-**Key Analysis:**
-
-* Job titles
-* Experience levels
-* Salary distribution
-* Job-market trends
-* Employment information
+Overview of job roles, experience levels, salaries, and employment trends.
 
 ### 2️⃣ Salary & Career Analysis
 
-Analyzes salary patterns based on different career factors.
-
-**Key Analysis:**
-
-* Salary by job role
-* Salary by experience level
-* Salary distribution
-* Career-level comparison
-* Job opportunities
+Analysis of salary patterns across job roles and experience levels.
 
 ### 3️⃣ AI Adoption & Employee Insights
 
-Explores how AI is affecting employees and organizations.
-
-**Key Analysis:**
-
-* AI adoption
-* AI-related concerns
-* Employee satisfaction
-* Remote work
-* Workplace impact
+Analysis of AI adoption, employee satisfaction, remote work, and AI concerns.
 
 ### 4️⃣ Executive Insights
 
-Provides a summarized view of important business and career insights.
-
-**Key Analysis:**
-
-* Salary trends
-* Career trends
-* AI adoption
-* Employee satisfaction
-* Remote-work patterns
-
----
-
-## 📈 Key Metrics
-
-The dashboard analyzes important attributes such as:
-
-* 💼 Job Title
-* 🎓 Experience Level
-* 💰 Salary
-* 😊 Employee Satisfaction
-* 🤖 AI Adoption
-* ⚠️ AI Fear / Concern
-* 🌍 Remote Work Ratio
-* 📊 Employment Trends
-
----
-
-## 🖼️ Dashboard Screenshots
-
-### 📌 Page 1 — Job Market Overview
-
-<div align="center">
-
-<img src="Screenshots/1.png" alt="Job Market Overview" width="900">
-
-</div>
-
----
-
-### 📌 Page 2 — Salary & Career Analysis
-
-<div align="center">
-
-<img src="Screenshots/2.png" alt="Salary and Career Analysis" width="900">
-
-</div>
-
----
-
-### 📌 Page 3 — AI Adoption & Employee Insights
-
-<div align="center">
-
-<img src="Screenshots/3.png" alt="AI Adoption and Employee Insights" width="900">
-
-</div>
-
----
-
-### 📌 Page 4 — Executive Insights
-
-<div align="center">
-
-<img src="Screenshots/4.png" alt="Executive Insights" width="900">
-
-</div>
+Summary of major job-market, salary, AI adoption, and employee insights.
 
 ---
 
 ## 🔎 Dashboard Filters
-
-The dashboard provides interactive filtering options to explore the data from different perspectives.
 
 * Job Title
 * Experience Level
@@ -166,51 +123,18 @@ The dashboard provides interactive filtering options to explore the data from di
 
 ---
 
-## 💡 Project Insights
+## 📈 Key Analysis
 
-This dashboard helps users understand:
+The dashboard analyzes:
 
-* How compensation varies across AI and Data Science roles.
-* How experience level relates to salary.
-* How remote work is represented across roles.
-* How employees perceive AI adoption.
-* How employee satisfaction varies across the dataset.
-* How AI-related concerns appear across different job groups.
-
----
-
-## 📂 Repository Structure
-
-```text
-AI-Data-Science-Job-Market-2026/
-│
-├── Screenshots/
-│   ├── 1.png
-│   ├── 2.png
-│   ├── 3.png
-│   └── 4.png
-│
-├── AI & Data Science Job Market 2026.pbip
-├── AI & Data Science Job Market 2026.Report/
-├── AI & Data Science Job Market 2026.SemanticModel/
-└── README.md
-```
-
-> Update the `.pbip`, `.Report`, and `.SemanticModel` names above if your actual repository filenames are different.
-
----
-
-## 🚀 Skills Demonstrated
-
-* Power BI Dashboard Development
-* Data Cleaning
-* Data Transformation
-* Data Visualization
-* Data Analysis
-* DAX
-* Business Intelligence
-* Interactive Dashboard Design
-* AI & Data Science Analytics
+* Job titles
+* Experience levels
+* Salary
+* Employee satisfaction
+* AI adoption
+* AI fear / concern
+* Remote work ratio
+* Career trends
 
 ---
 
@@ -233,13 +157,9 @@ https://github.com/saravananbass12-tech
 
 ---
 
-## ⭐ Project
-
-If you find this project useful, you can **Star ⭐ the repository** and explore the dashboard.
-
 <div align="center">
 
-**AI & Data Science Job Market 2026**
+### ⭐ AI & Data Science Job Market 2026
 
 **Power BI • Data Analytics • AI & Technology**
 
