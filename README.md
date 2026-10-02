@@ -20,7 +20,7 @@
 
 ---
 
-### 📌 2. Salary & Career Analysis
+### 📌 2. AI & Employee Insights
 
 <div align="center">
 
@@ -29,8 +29,8 @@
 </div>
 
 ---
-
-### 📌 3. AI Adoption & Employee Insights
+         
+### 📌 3. Salary Analysis
 
 <div align="center">
 
@@ -40,7 +40,7 @@
 
 ---
 
-### 📌 4. Executive Insights
+### 📌 4. Location & Remote Work
 
 <div align="center">
 
