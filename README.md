@@ -14,7 +14,7 @@
 
 <div align="center">
 
-<img src="./Screenshots/1.png" alt="Job Market Overview" width="1200">
+<img src="./Screenshots/1.png" alt="Job Market Overview" width="1000">
 
 </div>
 
