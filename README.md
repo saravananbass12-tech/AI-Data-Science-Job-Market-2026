@@ -1,5 +1,11 @@
 # 📊 AI & Data Science Job Market 2026
 
+<div align="center">
+
+<img src="https://img.shields.io/badge/Power%20BI-2026-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"> <img src="https://img.shields.io/badge/Data%20Analytics-2026-00C853?style=for-the-badge"> <img src="https://img.shields.io/badge/AI%20%26%20Data%20Science-Job%20Market-1F6FEB?style=for-the-badge"> <img src="https://img.shields.io/badge/Project-2026-7C4DFF?style=for-the-badge">
+
+</div>
+
 ---
 
 ## 🖼️ Dashboard Screenshots
