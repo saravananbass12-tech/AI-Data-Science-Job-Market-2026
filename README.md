@@ -24,7 +24,7 @@
 
 <div align="center">
 
-<img src="./Screenshots/2.png" alt="Salary & Career Analysis" width="1200">
+<img src="./Screenshots/2.png" alt="Salary & Career Analysis" width="1000">
 
 </div>
 
@@ -34,7 +34,7 @@
 
 <div align="center">
 
-<img src="./Screenshots/3.png" alt="AI Adoption & Employee Insights" width="1200">
+<img src="./Screenshots/3.png" alt="AI Adoption & Employee Insights" width="1000">
 
 </div>
 
@@ -44,7 +44,7 @@
 
 <div align="center">
 
-<img src="./Screenshots/4.png" alt="Executive Insights" width="1200">
+<img src="./Screenshots/4.png" alt="Executive Insights" width="1000">
 
 </div>
 
