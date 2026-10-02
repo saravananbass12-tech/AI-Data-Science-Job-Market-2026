@@ -1,4 +1,8 @@
+<div align="center">
+  
 # 📊 AI & Data Science Job Market 2026
+
+<\div>
 
 <div align="center">
 
@@ -134,7 +138,8 @@ The dashboard analyzes:
 * Career trends
 
 ---
-
+<div align="center">
+  
 ## 👨‍💻 Author
 
 ### SARAVANAN D
@@ -143,11 +148,11 @@ The dashboard analyzes:
 
 📧 **Email:** [saravananbass12@gmail.com](mailto:saravananbass12@gmail.com)
 
-📍 **Tamil Nadu, India**
 
 💻 **GitHub:**
 https://github.com/saravananbass12-tech
 
+<\div>
 ---
 
 <div align="center">
