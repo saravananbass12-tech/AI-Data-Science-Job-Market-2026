@@ -2,7 +2,10 @@
 
 <div align="center">
 
-<img src="https://img.shields.io/badge/Power%20BI-2026-F2C811?style=for-the-badge&logo=powerbi&logoColor=black"> <img src="https://img.shields.io/badge/Data%20Analytics-2026-00C853?style=for-the-badge"> <img src="https://img.shields.io/badge/AI%20%26%20Data%20Science-Job%20Market-1F6FEB?style=for-the-badge"> <img src="https://img.shields.io/badge/Project-2026-7C4DFF?style=for-the-badge">
+<img src="https://img.shields.io/badge/Power%20BI-2026-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
+<img src="https://img.shields.io/badge/Data%20Analytics-2026-00C853?style=for-the-badge">
+<img src="https://img.shields.io/badge/AI%20%26%20Data%20Science-Job%20Market-1F6FEB?style=for-the-badge">
+<img src="https://img.shields.io/badge/Project-2026-7C4DFF?style=for-the-badge">
 
 </div>
 
@@ -24,17 +27,17 @@
 
 <div align="center">
 
-<img src="./Screenshots/2.png" alt="Salary & Career Analysis" width="1000">
+<img src="./Screenshots/2.png" alt="AI & Employee Insights" width="1000">
 
 </div>
 
 ---
-         
+
 ### 📌 3. Salary Analysis
 
 <div align="center">
 
-<img src="./Screenshots/3.png" alt="AI Adoption & Employee Insights" width="1000">
+<img src="./Screenshots/3.png" alt="Salary Analysis" width="1000">
 
 </div>
 
@@ -44,7 +47,7 @@
 
 <div align="center">
 
-<img src="./Screenshots/4.png" alt="Executive Insights" width="1000">
+<img src="./Screenshots/4.png" alt="Location & Remote Work" width="1000">
 
 </div>
 
@@ -52,17 +55,17 @@
 
 ## 📌 Project Overview
 
-**AI & Data Science Job Market 2026** is an interactive **Power BI dashboard** designed to analyze job-market trends across Artificial Intelligence, Data Science, Machine Learning, and related technology roles.
+**AI & Data Science Job Market 2026** is an interactive **Power BI dashboard** designed to analyze job-market trends across **Artificial Intelligence, Data Science, Machine Learning, and related technology roles**.
 
 The dashboard provides insights into:
 
-* 💼 Job roles
+* 💼 Job Roles
 * 💰 Salaries
-* 🎓 Experience levels
-* 😊 Employee satisfaction
-* 🤖 AI adoption
-* 🌍 Remote work
-* ⚠️ AI-related concerns
+* 🎓 Experience Levels
+* 😊 Employee Satisfaction
+* 🤖 AI Adoption
+* 🌍 Remote Work
+* ⚠️ AI-Related Concerns
 
 ---
 
@@ -74,17 +77,18 @@ The dashboard provides insights into:
 * Analyze remote-work opportunities.
 * Explore AI adoption in the workplace.
 * Study AI-related workplace concerns.
+* Identify patterns across locations and job categories.
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-| Tool              | Purpose                        |
-| ----------------- | ------------------------------ |
-| 📊 Power BI       | Dashboard & Visualization      |
-| 📈 Data Analytics | Data Analysis                  |
-| 🧮 DAX            | Calculations & Measures        |
-| 🔄 Power Query    | Data Cleaning & Transformation |
+| Tool                  | Purpose                        |
+| --------------------- | ------------------------------ |
+| 📊 **Power BI**       | Dashboard & Data Visualization |
+| 📈 **Data Analytics** | Data Analysis                  |
+| 🧮 **DAX**            | Calculations & Measures        |
+| 🔄 **Power Query**    | Data Cleaning & Transformation |
 
 ---
 
@@ -92,23 +96,53 @@ The dashboard provides insights into:
 
 ### 1️⃣ Job Market Overview
 
-Overview of job roles, experience levels, salaries, and employment trends.
+Provides an overview of:
 
-### 2️⃣ Salary & Career Analysis
+* Job roles
+* Experience levels
+* Salary distribution
+* Employment trends
+* Job-market patterns
 
-Analysis of salary patterns across job roles and experience levels.
+---
 
-### 3️⃣ AI Adoption & Employee Insights
+### 2️⃣ AI & Employee Insights
 
-Analysis of AI adoption, employee satisfaction, remote work, and AI concerns.
+Analyzes:
 
-### 4️⃣ Executive Insights
+* AI adoption
+* Employee satisfaction
+* AI-related concerns
+* Workplace trends
+* Remote-work patterns
 
-Summary of major job-market, salary, AI adoption, and employee insights.
+---
+
+### 3️⃣ Salary Analysis
+
+Provides insights into:
+
+* Salary distribution
+* Salary by job role
+* Salary by experience level
+* Career-related salary patterns
+
+---
+
+### 4️⃣ Location & Remote Work
+
+Analyzes:
+
+* Job locations
+* Remote-work opportunities
+* Remote-work ratio
+* Location-based job trends
 
 ---
 
 ## 🔎 Dashboard Filters
+
+The dashboard includes interactive filters such as:
 
 * Job Title
 * Experience Level
@@ -117,6 +151,7 @@ Summary of major job-market, salary, AI adoption, and employee insights.
 * Employee Satisfaction
 * Remote Work
 * AI Fear / Concern
+* Location
 
 ---
 
@@ -124,30 +159,47 @@ Summary of major job-market, salary, AI adoption, and employee insights.
 
 The dashboard analyzes:
 
-* Job titles
-* Experience levels
-* Salary
-* Employee satisfaction
-* AI adoption
-* AI fear / concern
-* Remote work ratio
-* Career trends
+* 💼 Job Titles
+* 🎓 Experience Levels
+* 💰 Salary
+* 😊 Employee Satisfaction
+* 🤖 AI Adoption
+* ⚠️ AI Fear / Concern
+* 🌍 Remote Work Ratio
+* 📍 Job Locations
+* 📊 Career Trends
 
 ---
-<div align="center">
-  
+
+## 🚀 Project Highlights
+
+* 📊 Interactive Power BI dashboard
+* 🔍 Multiple analytical pages
+* 🎯 Interactive filters and slicers
+* 📈 Data-driven visualizations
+* 💼 Job-market analysis
+* 💰 Salary analysis
+* 🤖 AI adoption analysis
+* 🌍 Remote-work analysis
+* 📍 Location-based insights
+
+---
+
 ## 👨‍💻 Author
+
+<div align="center">
 
 ### SARAVANAN D
 
 **Power BI | Data Analytics | AI & Technology**
 
-📧 **Email:** [saravananbass12@gmail.com](mailto:saravananbass12@gmail.com)
-
+📧 **Email:**
+[saravananbass12@gmail.com](mailto:saravananbass12@gmail.com)
 
 💻 **GitHub:**
 https://github.com/saravananbass12-tech
 
+</div>
 
 ---
 
