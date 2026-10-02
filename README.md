@@ -1,14 +1,5 @@
 # 📊 AI & Data Science Job Market 2026
 
-<div align="center">
-
-<img src="https://img.shields.io/badge/Power%20BI-2026-F2C811?style=for-the-badge&logo=powerbi&logoColor=black">
-<img src="https://img.shields.io/badge/Data%20Analytics-2026-00C853?style=for-the-badge">
-<img src="https://img.shields.io/badge/AI%20%26%20Data%20Science-Job%20Market-1F6FEB?style=for-the-badge">
-<img src="https://img.shields.io/badge/Project-2026-7C4DFF?style=for-the-badge">
-
-</div>
-
 ---
 
 ## 🖼️ Dashboard Screenshots
@@ -17,7 +8,7 @@
 
 <div align="center">
 
-<img src="Screenshots/1.png" alt="Job Market Overview" width="950">
+<img src="./Screenshots/1.png" alt="Job Market Overview" width="1200">
 
 </div>
 
@@ -27,7 +18,7 @@
 
 <div align="center">
 
-<img src="Screenshots/2.png" alt="Salary and Career Analysis" width="950">
+<img src="./Screenshots/2.png" alt="Salary & Career Analysis" width="1200">
 
 </div>
 
@@ -37,7 +28,7 @@
 
 <div align="center">
 
-<img src="Screenshots/3.png" alt="AI Adoption and Employee Insights" width="950">
+<img src="./Screenshots/3.png" alt="AI Adoption & Employee Insights" width="1200">
 
 </div>
 
@@ -47,7 +38,7 @@
 
 <div align="center">
 
-<img src="Screenshots/4.png" alt="Executive Insights" width="950">
+<img src="./Screenshots/4.png" alt="Executive Insights" width="1200">
 
 </div>
 
@@ -140,8 +131,6 @@ The dashboard analyzes:
 
 ## 👨‍💻 Author
 
-<div align="center">
-
 ### SARAVANAN D
 
 **Power BI | Data Analytics | AI & Technology**
@@ -152,8 +141,6 @@ The dashboard analyzes:
 
 💻 **GitHub:**
 https://github.com/saravananbass12-tech
-
-</div>
 
 ---
 
