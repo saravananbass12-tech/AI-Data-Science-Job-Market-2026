@@ -1,8 +1,4 @@
-<div align="center">
-  
 # 📊 AI & Data Science Job Market 2026
-
-<\div>
 
 <div align="center">
 
